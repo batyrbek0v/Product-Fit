@@ -120,6 +120,7 @@ ul{
 }
 .copyright p{
     margin: 10px;
+    margin-bottom: 0;
 }
 .copyright p i{
     color: #F05670;
@@ -197,7 +198,8 @@ ul{
         justify-content: center;
     }
     .footer_logo img{
-        width: 250px;
+        width: 20й  0px;
+        margin-left: 0;
     }
     .footer_contacts li a i{
         margin-left: 0;
@@ -210,3 +212,8 @@ ul{
 /* FOOTER_ADAPTIVE_КОНЕЦ */
 
 /* FOOTER-КОНЕЦ */
+
+footer{
+    background: #044e52;
+    color: white;
+}
