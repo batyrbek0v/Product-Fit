@@ -1,11 +1,603 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@400;600&family=Poppins:wght@500&family=Tinos&display=swap');
-body{
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p {
     margin: 0;
 }
+
+h2,
+h1 {
+    margin: 0;
+    background-color: #f8ffff;
+    font-family: 'Raleway',
+        sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* start nav_background */
+
+.nav_background {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 15px 10%;
+    padding-top: 20px;
+    background: rgba(0, 0, 0, 0);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.list li {
+    margin: 0 50px;
+}
+
+.list li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.list li a button {
+    background: #f05670;
+    border: none;
+    width: 186.78px;
+    height: 62.26px;
+    font-size: 16px;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 700;
+    transition: 0.6s;
+}
+.list li a button:hover{
+    border: 2px solid #f05670;
+    background: white;
+    color: #f05670;
+}
+.list li a span {
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.list li a span span {
+    margin-left: 10px;
+    color: #1e959b;
+    font-weight: 700;
+}
+
+
+
+/* end nav background */
+/* bottom_background start */
+
+.bottom_background {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.list_text {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    width: 50%;
+    z-index: 10;
+}
+
+.list_text li {
+    margin: 10px;
+}
+
+.list_text li h1 {
+    color: #1e959b;
+    font-size: 52px;
+    margin-bottom: 5px;background: none;
+}
+
+.list_text li p {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.list_text li button {
+    background: #f05670;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+    width: 232px;
+    height: 70px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.6s;
+}
+.list_text li button:hover{
+    border: 2px solid #f05670;
+    background: white;
+    color: #f05670;
+    box-shadow: 0px 5px 10px rgba(155, 10, 30, 0.5);
+}
+
+.bottom_background_image {
+    width: 50%;
+}
+
+.bottom_background_image img {
+    width: 100%;
+}
+
+.icon_logo_background {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    padding: 55px 0;
+}
+
+
+
+/* css bayel */
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.blog {
+    background: url('../image/bayel-bg.jpg') center/ cover;
+    width: 100%;
+    margin-bottom: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.blog_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog_text {
+    width: 50%;
+}
+
+.blog_text_title {
+    color: #F05670;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.blog_text_content {
+    color: #1E959B;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* slider  by bayel */
+
+.bayel_card_back {
+    background: url('../image/card-bg.png')center / cover;
+    height: 150px;
+    margin-top: 150px;
+}
+
+.bayel_card_back:nth-child(2) {
+    margin-top: 0;
+}
+
+.row_card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 0;
+
+}
+
+.card_inner {
+    margin: 35px 0;
+}
+
+.card_absolute {
+    text-align: center;
+    box-shadow: 0 5px 10px #1E959B;
+    border-radius: 30px;
+    position: relative;
+    z-index: 5;
+    background-color: white;
+    top: -90px;
+    margin: 0 auto;
+    width: 290px;
+}
+
+.card_inner img {
+    position: absolute;
+    left: 55px;
+    top: -50px;
+}
+
+.card_inner h2 {
+    color: #1E959B;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    padding-top: 150px;
+}
+
+.card_btn {
+    background: #F05670;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+    padding: 22px 65px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 50px 40px 20px;
+    transition: .5s;
+}
+
+.card_btn:hover {
+    border: 1px solid #f05670;
+    background: white;
+    color: #f05670;
+    box-shadow: 0px 5px 10px rgba(155, 10, 30, 0.5);
+}
+
+.slick-track {
+    display: flex;
+}
+
+.row_card_evenly {
+    position: relative;
+}
+
+/* slider arrow */
+
+.slick-arrow {
+    position: absolute;
+    top: 15%;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 50px;
+    border: none;
+}
+
+.slick-arrow.slick-next {
+    right: 0;
+    background: url('../image/next-arrow.svg')0 0 / 100% no-repeat;
+    cursor: pointer;
+}
+
+.slick-arrow.slick-prev {
+    left: 0;
+    background: url('../image/prev-arrow.svg')0 0 / 100% no-repeat;
+    cursor: pointer;
+}
+
+.bayel_card_overlay {
+    display: none;
+}
+
+/* bayel card adaptive */
+
+
+
+
+
+/* end bottom background */
+/* start bottom logo background */
+
+.bottom_logo_background {
+    background: #1e959b;
+    width: 80%;
+    padding: 0 10%;
+    margin-bottom: 120px;
+}
+
+.icon_logo_background {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    padding: 55px 0;
+}
+
+
+
+
+
+/* end bottom logo background */
+
+/* ========BEKTUR FIRST BLOCK======================= */
+
+.signInterviewCards {
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.interviewCard {
+    box-shadow: 0px 4px 4px rgba(30, 149, 155, 0.5);
+    color: white;
+    border-radius: 25px;
+    width: 195px;
+    height: 164px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.interviewCard:nth-child(1) {
+    box-shadow: inset 0px 4px 4px rgba(30, 149, 155, 0.5);
+}
+
+.interviewCard h4 {
+    color: #3c3c3c;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.signInterviewAbout {
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.signInterviewAboutBanner {
+    width: 40%;
+}
+
+.signInterviewAboutBanner img {
+    width: 100%;
+}
+
+.signInterviewAboutInfo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signInterviewAboutTitle h3 {
+    margin: 0;
+    color: #1e959b;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 27px;
+}
+
+.signInterviewAboutDescription p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #3c3c3c;
+    margin: 0;
+    padding-bottom: 70px;
+    width: 60%;
+}
+
+.signInterviewAboutbtn a {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: #f05670;
+    padding: 25px 21px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+    transition: 0.6s;
+}
+
+.signInterviewAboutbtn a:hover {
+    border: 1px solid #f05670;
+    background: white;
+    color: #f05670;
+    box-shadow: 0px 5px 10px rgba(155, 10, 30, 0.5);
+}
+
+.signInterviewAboutbtn0 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signInterviewAboutbtn0 a {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: #f05670;
+    padding: 25px 21px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+    transition: ease-in-out 0.5s;
+    display: none;
+}
+
+.signInterviewAboutbtn0 a:hover {
+    border: 2px solid #f05670;
+    background: white;
+    color: #f05670;
+    box-shadow: 0px 5px 10px rgba(155, 10, 30, 0.5);
+}
+
+
+
+
+/* =============ENDING OF FIRST BLOCK====================*/
+
+/* =========BEKTUR PRODUCT FIT block============== */
+.productFitWrapper {
+    margin-top: 120px;
+    width: 100%;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.productFitTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.productFitTitle h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #1e959b;
+}
+
+.cardGroup {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cardGroup .card {
+    width: 320px;
+    height: 320px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 46px;
+}
+
+.cardGroup .card .cardImg {
+    padding-top: 25px;
+}
+
+.cardGroup .card .cardTitle h3 {
+    font-size: 16px;
+    line-height: 20px;
+    color: #1e959b;
+    font-weight: 700;
+    margin: 0;
+    padding: 19px 0 5px 0;
+}
+
+.cardGroup .card .cardDescription {
+    width: 80%;
+}
+
+.cardGroup .card .cardDescription p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #3c3c3c;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+.cardGroup .card .card5 {
+    width: 90%;
+}
+
+.productFitButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productFitButton a {
+    background-color: #1e959b;
+    color: #fff;
+    padding: 25px 63px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #1e959b;
+    outline: 0;
+    border-radius: 25px;
+    font-weight: 700;
+    transition: 500ms;
+    margin-bottom: 90px;
+}
+
+.productFitButton a:hover {
+    color: #1e959b;
+    background: white;
+}
+
+/* ====== BEKTUR ENDING OF PRODUCTFIT block======== */
+
 /* FOOTER */
 
 /* FOOTER_BANNER */
-.footer_banner{
+footer {
+    margin-top: 500px;
+    padding-top: 100px;
+
+}
+
+.footer_banner {
     width: 90%;
     padding: 10px 5%;
     margin-bottom: 100px;
@@ -13,11 +605,12 @@ body{
     justify-content: space-evenly;
     align-items: center;
 }
-.footer_btn{
+
+.footer_btn {
     width: 330px;
     height: 100px;
     border-radius: 20px;
-    background: #F05670;
+    background: #f05670;
     color: white;
     font-weight: bold;
     font-size: 24px;
@@ -27,188 +620,421 @@ body{
     transition: 0.6s;
     cursor: pointer;
 }
-.footer_btn:hover{
-    border: 2px solid #F05670;
+
+.footer_btn:hover {
+    border: 2px solid #f05670;
     background: white;
-    color: #F05670;
+    color: #f05670;
     box-shadow: 0px 5px 10px rgba(155, 10, 30, 0.5);
 }
+
 /* FOOTER_BANNER_КОНЕЦ */
 
 /* FOOTER_NAV */
 
-ul{
+ul {
     list-style: none;
     margin: 0%;
     padding: 0%;
 }
-.footer_nav{
+
+.footer_nav {
     width: 90%;
-    padding: 10px 5%;
+    margin: 0 auto;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.footer_list{
-    margin: 0 30px;  
+
+.footer_list {
+    margin: 0 30px;
 }
-.footer_list li{
+
+.footer_list li {
     margin: 20px 0;
 }
-.footer_list li a{
-    color: #1E959B;
+
+.footer_list li a {
+    color: #1e959b;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     transition: 0.3s;
 }
-.footer_list li a:hover{
-   color: #044e52;
+
+.footer_list li a:hover {
+    color: #044e52;
 }
-.footer_contacts{
+
+.footer_contacts {
     margin: 0 20px;
 }
-.footer_contacts li{
+
+.footer_contacts li {
     margin: 20px 0;
 }
-.footer_contacts li a{
-    color: #1E959B;
+
+.footer_contacts li a {
+    color: #1e959b;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     transition: 0.3s;
 }
-.footer_contacts li a:hover{
+
+.footer_contacts li a:hover {
     color: #044e52;
 }
-.footer_contacts li a i{
+
+.footer_contacts li a i {
     font-size: 30px;
     display: flex;
     align-items: center;
 }
-.footer_contacts li a i b{
+
+.footer_contacts li a i b {
     font-size: 16px;
     margin-left: 10px;
     font-family: 'Montserrat', sans-serif;
 }
-.footer_social{
+
+.footer_social {
     display: flex;
     align-items: center;
 }
-.footer_social li{
-    margin:  0 20px;
+
+.footer_social li {
+    margin: 0 20px;
     font-size: 35px;
-    color: #1E959B;
+    color: #1e959b;
     transition: 0.3s;
     cursor: pointer;
 }
-.footer_social li:hover{
+
+.footer_social li:hover {
     color: #044e52;
 }
-.footer_social p{
+
+.footer_social p {
     width: 290px;
     height: 136px;
     font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #3C3C3C;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #3c3c3c;
 }
-.copyright{
+
+.copyright {
     margin-top: 50px;
     text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #3C3C3C80;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #3c3c3c80;
 }
-.copyright p{
+
+.copyright p {
     margin: 10px;
     margin-bottom: 0;
 }
-.copyright p i{
-    color: #F05670;
+
+.copyright p i {
+    color: #f05670;
 }
+
 /* FOOTER_NAV_КОНЕЦ */
 
 /* FOOTER_ADAPTIVE */
-@media screen and (max-width:1356px) {
-    .footer_nav{
-        flex-wrap: wrap;
+
+/* all adaptive */
+@media screen and (max-width: 1400px) {
+    .nav_background {
+        width: 90%;
+        padding: 15px 5%;
     }
 }
-@media screen and (max-width:768px) {
-    .footer_banner{
-        flex-wrap: wrap;
+
+
+@media screen and (max-width: 1268px) {
+    .icon_logo_background li:nth-child(5) {
+        display: none;
     }
-    .footer_btn{
+}
+
+@media screen and (max-width: 1202px) {
+    .nav_background {
+        width: 90%;
+        padding: 15px 5%;
+    }
+
+    .list li {
+        margin: 0 20px;
+    }
+
+    footer {
         margin-top: 50px;
     }
 }
-@media screen and (max-width:425px){
-    .footer_banner{
+
+@media (max-width:1180px) {
+    .bayel_card {
+        display: none;
+    }
+    .bayel_card_overlay {
+        display: block;
+        overflow: hidden;
+        padding-bottom: 120px;
+    }
+    .footer_nav {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1024px) {
+    .signInterviewAboutBanner {
+        width: 70%;
+    }
+
+    .signInterviewAbout {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .signInterviewAboutInfo {
+        width: 60%;
+        align-items: center;
+    }
+
+    .signInterviewAboutbtn a {
+        display: none;
+    }
+
+    .signInterviewAboutbtn0 a {
+        display: block;
+    }
+
+    .signInterviewAboutTitle h3 {
+        text-align: center;
+    }
+
+    .signInterviewAboutDescription p {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 968px) {
+    .bottom_background_image {
+        display: none;
+    }
+
+    header {
+        background: url('../image/Group.png') center / cover no-repeat;
+        width: 100%;
+    }
+
+    .list_text {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .list_text li button {
+        margin-top: 100px;
+    }
+
+    .icon_logo_background li:nth-child(4) {
+        display: none;
+    }
+
+    .list li span span {
+        display: none;
+    }
+}
+
+
+
+@media (max-width:940px) {
+    .blog {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .signInterviewAboutBanner {
+        width: 80%;
+    }
+
+    .signInterviewAboutInfo {
+        width: 90%;
+        text-align: center;
+    }
+
+    .companyIconsList li {
+        padding: 10px 0;
+    }
+
+    .footer_banner {
+        flex-wrap: wrap;
+    }
+
+    .footer_btn {
+        margin-top: 50px;
+    }
+
+    .footer_nav {
+        justify-content: space-between;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .nav_background {
         justify-content: center;
     }
-    .footer_logo img{
+}
+
+@media screen and (max-width: 568px) {
+    .icon_logo_background li:nth-child(2) {
+        display: none;
+    }
+
+    .bottom_logo_background {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .companyIcons {
+        margin-bottom: 90px;
+    }
+    .icon_logo_background{
+        flex-wrap: wrap;
+    }
+    .footer_banner {
+        justify-content: center;
+    }
+
+    .footer_logo img {
         width: 350px;
     }
-    .footer_list{
+
+    .footer_list {
         display: flex;
         justify-content: center;
         margin: 0%;
         margin-left: 20px;
         margin-top: 30px;
     }
-    .footer_list li{
+
+    .footer_list li {
         margin: 0 35px;
     }
-    .footer_contacts{
+
+    .footer_contacts {
         margin-left: 70px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .footer_contacts li a{
+
+    .footer_contacts li a {
         font-size: 24px;
     }
-    .footer_contacts li a i{
+
+    .footer_contacts li a i {
         margin-left: 15px;
     }
-    .footer_social{
+
+    .footer_social {
         width: 90%;
         padding: 0 5%;
         justify-content: space-between;
     }
-    .footer_social li i{
+
+    .footer_social li i {
         font-size: 40px;
     }
-    .footer_social p{
+
+    .footer_social p {
         display: none;
     }
 }
-@media screen and (max-width:375px){
-    .footer_contacts{
+
+@media screen and (max-width: 400px) {
+    .list_text li h1 {
+        font-size: 34px;
+    }
+
+    .list_text li button {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer_contacts {
         margin-left: 50px;
     }
 }
-@media screen and (max-width:320px){
-    .footer_banner img{
+
+@media screen and (max-width: 320px) {
+    .footer_banner img {
         width: 250px;
         margin-left: 50px;
     }
-    .footer_btn{
+
+    .footer_btn {
         width: 250px;
     }
-    .footer_nav{
+
+    .footer_nav {
         justify-content: center;
     }
-    .footer_logo img{
-        width: 20й  0px;
+
+    .footer_logo img {
+        width: 20й 0px;
         margin-left: 0;
     }
-    .footer_contacts li a i{
+
+    .footer_contacts li a i {
         margin-left: 0;
     }
-    .footer_contacts li a{
+
+    .footer_contacts li a {
         font-size: 20px;
-        
+    }
+
+    .companyIconsList li img {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .companyIconsList li {
+        padding: 10px 0;
+    }
+
+    .signInterviewAboutbtn0 a {
+        padding: 15px 20px;
+        font-size: 13px;
+    }
+
+    .signInterviewAboutBanner {
+        width: 100%;
+    }
+
+    .signInterviewAboutInfo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .signInterviewAboutTitle h3 {
+        font-size: 28px;
     }
 }
-/* FOOTER_ADAPTIVE_КОНЕЦ */
 
+/* FOOTER_ADAPTIVE_КОНЕЦ */
 /* FOOTER-КОНЕЦ */
